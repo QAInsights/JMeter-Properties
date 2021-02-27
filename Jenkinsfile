@@ -4,9 +4,12 @@ pipeline {
     stage('input') {
       agent any
       steps {
-        input 'this is my message'
+        echo 'message ${test}'
       }
     }
 
+  }
+  environment {
+    test = 'testtttt'
   }
 }
