@@ -4,7 +4,13 @@ pipeline {
     stage('input') {
       agent any
       steps {
-        echo "${test}"
+        echo "test is hard ${test}"
+      }
+    }
+
+    stage('') {
+      steps {
+        cleanWs()
       }
     }
 
