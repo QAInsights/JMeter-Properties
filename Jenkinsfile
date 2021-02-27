@@ -5,10 +5,11 @@ pipeline {
       agent any
       steps {
         echo "test is hard ${test}"
+        archiveArtifacts 'user.properties'
       }
     }
 
-    stage('') {
+    stage('error') {
       steps {
         cleanWs()
       }
