@@ -4,7 +4,7 @@ pipeline {
     stage('input') {
       agent any
       steps {
-        echo 'message \'${test}\''
+        echo 'message ${test}'
       }
     }
 
